@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body><form action="/my-handling-form-page" method="post">
+<body><form action="" method="post">
+  {%csrf_token%}
   <ul>
     <li>
       <label for="name">Nombre:</label>
-      <input type="text" id="name" name="user_name" />
+      <input type="text" id="name" name="name" />
     </li>
     <li>
-      <label for="mail">Correo electrónico:</label>
-      <input type="email" id="mail" name="user_mail" />
+      <label for="password">clave:</label>
+      <input type="password" id="password" name="password" />
     </li>
-    <li>
-      <label for="msg">Mensaje:</label>
-      <textarea id="msg" name="user_message"></textarea>
-    </li><li class="button">
+    <li class="button">
   <button type="submit">Envíe su mensaje</button>
 </li>
   </ul>
